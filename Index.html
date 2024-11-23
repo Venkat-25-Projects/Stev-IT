@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>STEVIT</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+       html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+    .card{
+        transition: transform 1s;
+    }
+    .card:hover{
+        transform:scale(1.2) ;
+        z-index: 1;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 500px;
+      margin: 0 auto;
+    }
+    @media screen and (max-width:720px){
+        .swiper {
+            height: 600px;
+        }
+    }
+    
+    .swiper1 {
+      width: 100%;
+      height: 500px;
+    }
+
+    .swiper-slide1 {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    footer a{
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+    }
+    footer a:hover{
+        color: gray;
+    }
+    </style>
+</head>
+<body>
+      <nav data-aos="slide-down" data-aos-duration="1000" class="navbar navbar-expand-lg navbar-light fixed-top bg-white px-5 shadow">
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image brand-logo" href="#" style="margin-left:-3%;"> <img src="Logo.png" alt="alternative" style="width:30%;height:5%;" class="responsive-white-logo"> </a>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <!-- end of mobile menu toggle button -->
+        <div class="d-lg-flex justify-content-end navbar-collapse collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav navigations ml-auto mt-2 mt-lg-0" id="navitems">
+                <li class="nav-item"> <a class="nav-link text-dark page-scroll" href="#Home">Home <span class="sr-only">(Current)</span></a> </li>
+                <li class="nav-item"> <a class="nav-link text-dark page-scroll" href="#aboutus">About Us</a> </li>
+                <li class="nav-item"> <a class="nav-link text-dark page-scroll" href="#AllCourses">All Courses</a> </li>
+                <li class="nav-item"> <a class="nav-link text-dark page-scroll" href="newbatch.html">New Batch</a> </li>
+                <li class="nav-item"> <a class="nav-link text-dark page-scroll" href="#services">Services</a> </li>
+                <li class="nav-item"> <a class="nav-link text-dark page-scroll" href="NewTrainings.html">Software Trainings</a> </li>
+                <li class="nav-item"> <a class="nav-link text-dark page-scroll" href="ContactUs">Contact Us</a> </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div data-aos="slide-down" data-aos-duration="1500" id="Home">
+      <div id="carouselExample" class="carousel slide" style="height: 85vh;">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="bg3.jpg" class="d-block w-100" height="800px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="bg2.jpg" class="d-block w-100" height="800px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="bg4.jpg" class="d-block w-100" height="800px" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev mt-5 pt-5" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon mt-5" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next mt-5 pt-5" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon mt-5" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container mt-5 pt-5">
+        <div class="aboutus my-4" id="aboutus">
+            <h1 class="text-center text-dark fw-bold" data-aos="slide-right" data-aos-duration="1000">About Us</h1>
+            <div class="row mt-4">
+                <div data-aos="slide-down" data-aos-duration="1000" class="col-md-4">
+                    <img src="serv1.webp" width="100%" alt="...">
+                </div>
+                <div data-aos="slide-up" data-aos-duration="1000" class="col-md-8">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, animi quos? Eum veritatis adipisci et odio esse! Accusamus quidem, distinctio architecto incidunt, optio cumque ipsa iusto sequi repudiandae maiores eum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto praesentium laboriosam qui, at odio totam dolorem, animi sint possimus cupiditate sapiente suscipit impedit minus architecto odit consectetur vitae ea voluptatibus.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic consequuntur ut quam error id voluptas unde modi, doloremque assumenda, quisquam illum quia veritatis! Voluptatem quae explicabo modi amet, non voluptas.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet repellendus labore harum unde facilis recusandae atque voluptatem laudantium, voluptatum similique error saepe dignissimos molestias cum sapiente rerum deserunt possimus dicta!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis facere dolorem at expedita ipsum esse blanditiis cupiditate, sit eveniet tempore commodi est unde iste, temporibus sunt aspernatur libero perferendis inventore.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="AllCourses">
+            <h1 class="text-center text-dark fw-bold" data-aos="slide-left" data-aos-duration="1000">Trending Courses</h1>
+            <div data-aos="zoom-in" data-aos-duration="1000" class="row justify-content-between">
+                <div class="col-md-3 mt-4 rounded">
+                    <div class="card shadow rounded">
+                        <img src="java full stack 1.jpeg" width="100%" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Java full stack</h5>
+                            <p class="card-text">10500 Learners</p>
+                            <p class="card-text">Training : 35000 INR</p>
+                            <p class="card-text">Duration : 6 months</p>
+                            <div class="d-grid gap-2">
+                                <a href="RegisterCourse.html" class="btn btn-outline-dark">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-4 rounded">
+                    <div class="card shadow rounded">
+                        <img src="python full stack.jpeg" width="100%" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Python full stack</h5>
+                            <p class="card-text">12700 Learners</p>
+                            <p class="card-text">Training : 35000 INR</p>
+                            <p class="card-text">Duration : 6 months</p>
+                            <div class="d-grid gap-2">
+                                <a href="Registercourse1.html" class="btn btn-outline-dark">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-4 rounded">
+                    <div class="card shadow rounded">
+                        <img src="sap.jpeg" width="100%" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sap</h5>
+                            <p class="card-text">14000 Learners</p>
+                            <p class="card-text">Training : 60000 INR</p>
+                            <p class="card-text">Duration : 4 months</p>
+                            <div class="d-grid gap-2">
+                                <a href="Registercourse2.html" class="btn btn-outline-dark">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-4 rounded">
+                    <div class="card shadow rounded">
+                        <img src="devops and aws.jpeg" width="100%" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">DevOps + AWS</h5>
+                            <p class="card-text">15483 Learners</p>
+                            <p class="card-text">Training : 50000 INR</p>
+                            <p class="card-text">Duration : 5 months</p>
+                            <div class="d-grid gap-2">
+                                <a href="Registercourse3.html" class="btn btn-outline-dark">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper -->
+<div class="container">
+    <h1 class="text-center mt-5 text-dark fw-bold" data-aos="fade-in" data-aos-duration="1000">Learn The Most Trending Courses</h1>
+    <div #swiperRef="" data-aos="zoom-out" data-aos-duration="1000" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card rounded shadow">
+                <img src="C L.jpeg" width="100%" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">C-Language</h5>
+                            <p class="card-text">57483 Learners</p>
+                            <p class="card-text">Training : 12000 INR</p>
+                            <p class="card-text">Duration : 4 months</p>
+                            <div class="d-grid gap-2">
+                                <a href="Registercourse3.html" class="btn btn-outline-dark">Learn More</a>
+                            </div>
+                        </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card rounded shadow">
+                <img src="c++.jpeg" width="100%" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">C++ language</h5>
+                            <p class="card-text">57487 Learners</p>
+                            <p class="card-text">Training : 20000 INR</p>
+                            <p class="card-text">Duration : 4 months</p>
+                            <div class="d-grid gap-2">
+                                <a href="Registercourse5.html" class="btn btn-outline-dark">Learn More</a>
+                            </div>
+                        </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card rounded shadow">
+                <img src="python1.jpeg" width="100%" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Python</h5>
+                            <p class="card-text">57483 Learners</p>
+                            <p class="card-text">Training : 60000 INR</p>
+                            <p class="card-text">Duration : 6 months</p>
+                            <div class="d-grid gap-2">
+                                <a href="Registercourse6.html" class="btn btn-outline-dark">Learn More</a>
+                            </div>
+                        </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card rounded shadow">
+                <img src="dbms.jpeg" width="100%" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">DBMS</h5>
+                            <p class="card-text">57483 Learners</p>
+                            <p class="card-text">Training : 30000 INR</p>
+                            <p class="card-text">Duration : 4 months</p>
+                            <div class="d-grid gap-2">
+                                <a href="Registercourse7.html" class="btn btn-outline-dark">Learn More</a>
+                            </div>
+                        </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card rounded shadow">
+                <img src="java1.jpeg" width="100%" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">JAVA</h5>
+                            <p class="card-text">57483 Learners</p>
+                            <p class="card-text">Training : 25000 INR</p>
+                            <p class="card-text">Duration : 3 months</p>
+                            <div class="d-grid gap-2">
+                                <a href="Registercourse8.html" class="btn btn-outline-dark">Learn More</a>
+                            </div>
+                        </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card rounded shadow">
+                <img src="advanced.jpeg" width="100%" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Advanced Java</h5>
+                            <p class="card-text">57483 Learners</p>
+                            <p class="card-text">Training : 40000 INR</p>
+                            <p class="card-text">Duration : 4 months</p>
+                            <div class="d-grid gap-2">
+                                <a href="Registercourse9.html" class="btn btn-outline-dark">Learn More</a>
+                            </div>
+                        </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card rounded shadow">
+                <img src="devops1.jpeg" width="100%" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">DevOps</h5>
+                            <p class="card-text">57483 Learners</p>
+                            <p class="card-text">Training : 25000 INR</p>
+                            <p class="card-text">Duration : 4 months</p>
+                            <div class="d-grid gap-2">
+                                <a href="Registercourse10.html" class="btn btn-outline-dark">Learn More</a>
+                            </div>
+                        </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card rounded shadow">
+                <img src="sap.jpeg" width="100%" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sap</h5>
+                            <p class="card-text">47483 Learners</p>
+                            <p class="card-text">Training : 45000 INR</p>
+                            <p class="card-text">Duration : 6 months</p>
+                            <div class="d-grid gap-2">
+                                <a href="Registercourse11.html" class="btn btn-outline-dark">Learn More</a>
+                            </div>
+                        </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card rounded shadow">
+                <img src="aws.jpeg" width="100%" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">AWS</h5>
+                            <p class="card-text">57483 Learners</p>
+                            <p class="card-text">Training : 60000 INR</p>
+                            <p class="card-text">Duration : 4 months</p>
+                            <div class="d-grid gap-2">
+                                <a href="Registercourse12.html" class="btn btn-outline-dark">Learn More</a>
+                            </div>
+                        </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card rounded shadow">
+                <img src="java full stack 1.jpeg" width="100%" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Java Full Stack</h5>
+                            <p class="card-text">57483 Learners</p>
+                            <p class="card-text">Training : 60000 INR</p>
+                            <p class="card-text">Duration : 6 months</p>
+                            <div class="d-grid gap-2">
+                                <a href="Registercourse13.html" class="btn btn-outline-dark">Learn More</a>
+                            </div>
+                        </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card rounded shadow">
+                <img src="python full stack.jpeg" width="100%" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Python Full Stack</h5>
+                            <p class="card-text">57483 Learners</p>
+                            <p class="card-text">Training : 60000 INR</p>
+                            <p class="card-text">Duration : 4 months</p>
+                            <div class="d-grid gap-2">
+                                <a href="Registercourse14.html" class="btn btn-outline-dark">Learn More</a>
+                            </div>
+                        </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card rounded shadow">
+                <img src="sql.jpeg" width="100%" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">SQL</h5>
+                            <p class="card-text">57483 Learners</p>
+                            <p class="card-text">Training : 50000 INR</p>
+                            <p class="card-text">Duration : 6 months</p>
+                            <div class="d-grid gap-2">
+                                <a href="Registercourse15.html" class="btn btn-outline-dark">Learn More</a>
+                            </div>
+                        </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card rounded shadow">
+                <img src="devops and aws.jpeg" width="100%" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">DevOps + Aws</h5>
+                            <p class="card-text">57483 Learners</p>
+                            <p class="card-text">Training : 45000 INR</p>
+                            <p class="card-text">Duration : 6 months</p>
+                            <div class="d-grid gap-2">
+                                <a href="Registercourse16.html" class="btn btn-outline-dark">Learn More</a>
+                            </div>
+                        </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card rounded shadow">
+                <img src="rpa.jpeg" width="100%" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">RPA</h5>
+                            <p class="card-text">57483 Learners</p>
+                            <p class="card-text">Training : 60000 INR</p>
+                            <p class="card-text">Duration : 6 months</p>
+                            <div class="d-grid gap-2">
+                                <a href="Registercourse17.html" class="btn btn-outline-dark">Learn More</a>
+                            </div>
+                        </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+</div>
+
+<!-- Swiper -->
+<div class="container  pb-5">
+<h1 class="text-center mt-3 text-dark fw-bold" data-aos="fade-out" data-aos-duration="1000">Hot Courses</h1>
+<div #swiperRef="" class="swiper mySwiper" data-aos="zoom-in" data-aos-duration="1000">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card rounded shadow">
+            <img src="DA.jpeg" width="100%" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Data science</h5>
+                        <p class="card-text">57483 Learners</p>
+                        <p class="card-text">Training : 60000 INR</p>
+                        <p class="card-text">Duration : 6 months</p>
+                        <div class="d-grid gap-2">
+                            <a href="Registercourse18.html" class="btn btn-outline-dark">Learn More</a>
+                        </div>
+                    </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card rounded shadow">
+            <img src="DA.jpeg" width="100%" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Analyst</h5>
+                        <p class="card-text">57483 Learners</p>
+                        <p class="card-text">Training : 60000 INR</p>
+                        <p class="card-text">Duration : 6 months</p>
+                        <div class="d-grid gap-2">
+                            <a href="Registercourse19.html" class="btn btn-outline-dark">Learn More</a>
+                        </div>
+                    </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card rounded shadow">
+            <img src="md.1.jpeg" width="100%" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Medical Coding</h5>
+                        <p class="card-text">57483 Learners</p>
+                        <p class="card-text">Training : 60000 INR</p>
+                        <p class="card-text">Duration : 6 months</p>
+                        <div class="d-grid gap-2">
+                            <a href="Registercourse20.html" class="btn btn-outline-dark">Learn More</a>
+                        </div>
+                    </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card rounded shadow">
+            <img src="sf.jpeg" width="100%" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sales Force</h5>
+                        <p class="card-text">57483 Learners</p>
+                        <p class="card-text">Training : 35000 INR</p>
+                        <p class="card-text">Duration : 6 months</p>
+                        <div class="d-grid gap-2">
+                            <a href="Registercourse21.html" class="btn btn-outline-dark">Learn More</a>
+                        </div>
+                    </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card rounded shadow">
+            <img src="ba1.jpeg" width="100%" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bussiness Analyst</h5>
+                        <p class="card-text">57483 Learners</p>
+                        <p class="card-text">Training : 45000 INR</p>
+                        <p class="card-text">Duration : 6 months</p>
+                        <div class="d-grid gap-2">
+                            <a href="Registercourse22.html" class="btn btn-outline-dark">Learn More</a>
+                        </div>
+                    </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card rounded shadow">
+            <img src="azure.jpeg" width="100%" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Azure</h5>
+                        <p class="card-text">57483 Learners</p>
+                        <p class="card-text">Training : 60000 INR</p>
+                        <p class="card-text">Duration : 6 months</p>
+                        <div class="d-grid gap-2">
+                            <a href="Registercourse23.html" class="btn btn-outline-dark">Learn More</a>
+                        </div>
+                    </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card rounded shadow">
+            <img src="test.jpeg" width="100%" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Testing</h5>
+                        <p class="card-text">57483 Learners</p>
+                        <p class="card-text">Training : 35000 INR</p>
+                        <p class="card-text">Duration : 4 months</p>
+                        <div class="d-grid gap-2">
+                            <a href="Registercourse24.html" class="btn btn-outline-dark">Learn More</a>
+                        </div>
+                    </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card rounded shadow">
+            <img src="c24.jpeg" width="100%" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cyber Security</h5>
+                        <p class="card-text">57483 Learners</p>
+                        <p class="card-text">Training : 30000 INR</p>
+                        <p class="card-text">Duration : 3 months</p>
+                        <div class="d-grid gap-2">
+                            <a href="Registercourse25.html" class="btn btn-outline-dark">Learn More</a>
+                        </div>
+                    </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card rounded shadow">
+            <img src="C1.jpg" width="100%" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Multi-Cloud</h5>
+                        <p class="card-text">74883 Learners</p>
+                        <p class="card-text">Training : 50000 INR</p>
+                        <p class="card-text">Duration : 6 months</p>
+                        <div class="d-grid gap-2">
+                            <a href="Registercourse26.html" class="btn btn-outline-dark">Learn More</a>
+                        </div>
+                    </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card rounded shadow">
+            <img src="f.n.jpeg" width="100%" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Full Stack.Net</h5>
+                        <p class="card-text">45483 Learners</p>
+                        <p class="card-text">Training : 60000 INR</p>
+                        <p class="card-text">Duration : 6 months</p>
+                        <div class="d-grid gap-2">
+                            <a href="Registercourse27.html" class="btn btn-outline-dark">Learn More</a>
+                        </div>
+                    </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card rounded shadow">
+            <img src="mern6.jpeg" width="100%" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mern</h5>
+                        <p class="card-text">57483 Learners</p>
+                        <p class="card-text">Training : 60000 INR</p>
+                        <p class="card-text">Duration : 6 months</p>
+                        <div class="d-grid gap-2">
+                            <a href="Registercourse28.html" class="btn btn-outline-dark">Learn More</a>
+                        </div>
+                    </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card rounded shadow">
+            <img src="fe2.jpeg" width="100%" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Front-end/java/python</h5>
+                        <p class="card-text">57483 Learners</p>
+                        <p class="card-text">Training : 60000 INR</p>
+                        <p class="card-text">Duration : 4 months</p>
+                        <div class="d-grid gap-2">
+                            <a href="RegisterCourse.html" class="btn btn-outline-dark">Learn More</a>
+                        </div>
+                    </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card rounded shadow">
+            <img src="be2.jpeg" width="100%" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Back-end/java/python</h5>
+                        <p class="card-text">57483 Learners</p>
+                        <p class="card-text">Training : 60000 INR</p>
+                        <p class="card-text">Duration : 4 months</p>
+                        <div class="d-grid gap-2">
+                            <a href="RegisterCourse.html" class="btn btn-outline-dark">Learn More</a>
+                        </div>
+                    </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card rounded shadow">
+            <img src="C1.jpg" width="100%" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">DevOps + Multi-Cloud</h5>
+                        <p class="card-text">57483 Learners</p>
+                        <p class="card-text">Training : 60000 INR</p>
+                        <p class="card-text">Duration : 4 months</p>
+                        <div class="d-grid gap-2">
+                            <a href="RegisterCourse.html" class="btn btn-outline-dark">Learn More</a>
+                        </div>
+                    </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+  
+
+<div class="container">
+   <h1 data-aos="zoom-in" data-aos-duration="1000" class="text-center fw-bold">Our Certifications from Indian Agile Board</h1>
+    <div data-aos="slide-up" data-aos-duration="1000" class="row justify-space-between mt-4">
+        <div class="col-md-3">
+            <div class="card rounded shadow">
+                <img src="demo.webp" width="100%" class="card-img-top" alt="...">
+                <h5 class="card-title text-center fw-bold">Scrum Master</h5>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card rounded shadow">
+                <img src="demo2.webp" width="100%" class="card-img-top" alt="...">
+                <h5 class="card-title text-center fw-bold">Scaled Agile Certification</h5>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card rounded shadow">
+                <img src="Demo3.webp" width="100%" class="card-img-top" alt="...">
+                <h5 class="card-title text-center fw-bold">PMP Certification Course</h5>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card rounded shadow">
+                <img src="Demo4.webp" width="100%" class="card-img-top" alt="...">
+                <h5 class="card-title text-center fw-bold">ISTBQ Certification</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container mt-5">
+    <h1 data-aos="zoom-out" data-aos-duration="1000" class="text-center fw-bold" id="services">Our Services</h1>
+     <div data-aos="slide-down" data-aos-duration="1000" class="row justify-space-between mt-4">
+         <div class="col-md-3">
+             <div class="card rounded shadow">
+                 <img src="serv1.webp" width="100%" class="card-img-top" alt="...">
+                 <h5 class="card-title mt-2 text-center fw-bold">Classroom Training</h5>
+                 <p class="text-muted text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam minima velit voluptatum perspiciatis aliquid illum placeat, earum provident distinctio sed, adipisci blanditiis dolore dicta. Eum, odio. Beatae, dolore.</p>
+             </div>
+         </div>
+         <div class="col-md-3">
+             <div class="card rounded shadow">
+                 <img src="serv2.webp" width="100%" class="card-img-top" alt="...">
+                 <h5 class="card-title mt-2 text-center fw-bold">Online Training</h5>
+                 <p class="text-muted text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ducimus veritatis quis aliquid illo commodi aspernatur omnis totam nisi odit impedit quam pariatur perspiciatis facilis, recusandae nesciunt ipsa explicabo officiis?</p>
+             </div>
+         </div>
+         <div class="col-md-3">
+             <div class="card rounded shadow">
+                 <img src="serv3.webp" width="100%" class="card-img-top" alt="...">
+                 <h5 class="card-title mt-2 text-center fw-bold">Corporate Training</h5>
+                 <p class="text-muted text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum labore eos esse pariatur architecto quas ex, ullam ea officiis corrupti, eveniet corporis facilis possimus dolor expedita numquam aut. Perspiciatis, eum.</p>
+             </div>
+         </div>
+         <div class="col-md-3">
+             <div class="card rounded shadow">
+                 <img src="serv3.webp" width="100%" class="card-img-top" alt="...">
+                 <h5 class="card-title mt-2 text-center fw-bold">Internships</h5>
+                 <p class="text-muted text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, commodi quidem dolorum nisi voluptatem, officia labore quas nam esse, eos amet? Ad dolores laborum praesentium veritatis excepturi voluptatibus.</p>
+             </div>
+         </div>
+     </div>
+ </div>
+ 
+
+ <div class="container mt-5 p-3 rounded bg-light">
+    <div class="row">
+    <h1 data-aos="slide-up" data-aos-duration="1000" class="text-center fw-bold">Key Thoughts of STEVIT</h1>
+        <div data-aos="slide-down" data-aos-duration="1000" class="row px-5 py-3 ">
+            <div data-aos="slide-right" data-aos-duration="1000" class="col-md-6">
+                <div class="card border border-dark">
+                    <div class="row px-5 py-3">
+                        <div class="col-3">
+                            <i class="fal fa-briefcase fa-3x"></i>
+                        </div>
+                        <div class="col-9 mt-3">
+                            <h5 class="fw-bold">Real Time Expert Trainers</h5>
+                        </div>
+                        <div class="col-3 mt-4">
+                            <i class="fal fa-users-class fa-3x"></i>
+                        </div>
+                        <div class="col-9 mt-4">
+                            <h5 class="fw-bold">50000+ Trained students</h5>
+                        </div>
+                        <div class="col-3 mt-4">
+                            <i class="fal fa-user-graduate fa-3x"></i>
+                        </div>
+                        <div class="col-9 mt-4">
+                            <h5 class="fw-bold">15000+ Students Placed at Different Levels</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="slide-left" data-aos-duration="1000" class="col-md-6">
+                <div class="card border border-dark">
+                    <div class="row px-5 py-3">
+                        <div class="col-3">
+                            <i class="fal fa-briefcase fa-3x"></i>
+                        </div>
+                        <div class="col-9 mt-3">
+                            <h5 class="fw-bold">Real Time Expert Trainers</h5>
+                        </div>
+                        <div class="col-3 mt-4">
+                            <i class="fal fa-users-class fa-3x"></i>
+                        </div>
+                        <div class="col-9 mt-4">
+                            <h5 class="fw-bold">50000+ Trained students</h5>
+                        </div>
+                        <div class="col-3 mt-4">
+                            <i class="fal fa-user-graduate fa-3x"></i>
+                        </div>
+                        <div class="col-9 mt-4">
+                            <h5 class="fw-bold">15000+ Students Placed at Different Levels</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div data-aos="zoom-in" data-aos-duration="1000" class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="bg-white rounded border border-dark">
+                        <div class="row px-5 py-3">
+                            <div class="col-4">
+                                <img src="image.jpeg" height="300px" width="100%">
+                            </div>
+                            <div class="col-8 ">
+                                <h6 class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, suscipit nisi deleniti, deserunt reiciendis nesciunt similique necessitatibus omnis eius dicta atque velit veritatis in. Consequuntur nostrum neque laborum tempora maiores.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="bg-white rounded border border-dark">
+                        <div class="row px-5 py-3">
+                            <div class="col-4">
+                                <img src="image.jpeg" height="300px" width="100%">
+                            </div>
+                            <div class="col-8 ">
+                                <h6 class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, suscipit nisi deleniti, deserunt reiciendis nesciunt similique necessitatibus omnis eius dicta atque velit veritatis in. Consequuntur nostrum neque laborum tempora maiores.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="bg-white rounded border border-dark">
+                        <div class="row px-5 py-3">
+                            <div class="col-4">
+                                <img src="image.jpeg" height="300px" width="100%">
+                            </div>
+                            <div class="col-8 ">
+                                <h6 class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, suscipit nisi deleniti, deserunt reiciendis nesciunt similique necessitatibus omnis eius dicta atque velit veritatis in. Consequuntur nostrum neque laborum tempora maiores.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="bg-white rounded border border-dark">
+                        <div class="row px-5 py-3">
+                            <div class="col-4">
+                                <img src="image.jpeg" height="300px" width="100%">
+                            </div>
+                            <div class="col-8 ">
+                                <h6 class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, suscipit nisi deleniti, deserunt reiciendis nesciunt similique necessitatibus omnis eius dicta atque velit veritatis in. Consequuntur nostrum neque laborum tempora maiores.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="bg-white rounded border border-dark">
+                        <div class="row px-5 py-3">
+                            <div class="col-4">
+                                <img src="image.jpeg" height="300px" width="100%">
+                            </div>
+                            <div class="col-8 ">
+                                <h6 class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, suscipit nisi deleniti, deserunt reiciendis nesciunt similique necessitatibus omnis eius dicta atque velit veritatis in. Consequuntur nostrum neque laborum tempora maiores.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="bg-white rounded border border-dark">
+                        <div class="row px-5 py-3">
+                            <div class="col-4">
+                                <img src="image.jpeg" height="300px" width="100%">
+                            </div>
+                            <div class="col-8 ">
+                                <h6 class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, suscipit nisi deleniti, deserunt reiciendis nesciunt similique necessitatibus omnis eius dicta atque velit veritatis in. Consequuntur nostrum neque laborum tempora maiores.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="bg-white rounded border border-dark">
+                        <div class="row px-5 py-3">
+                            <div class="col-4">
+                                <img src="image.jpeg" height="300px" width="100%">
+                            </div>
+                            <div class="col-8 ">
+                                <h6 class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, suscipit nisi deleniti, deserunt reiciendis nesciunt similique necessitatibus omnis eius dicta atque velit veritatis in. Consequuntur nostrum neque laborum tempora maiores.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="bg-white rounded border border-dark">
+                        <div class="row px-5 py-3">
+                            <div class="col-4">
+                                <img src="image.jpeg" height="300px" width="100%">
+                            </div>
+                            <div class="col-8 ">
+                                <h6 class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, suscipit nisi deleniti, deserunt reiciendis nesciunt similique necessitatibus omnis eius dicta atque velit veritatis in. Consequuntur nostrum neque laborum tempora maiores.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="bg-white rounded border border-dark">
+                        <div class="row px-5 py-3">
+                            <div class="col-4">
+                                <img src="image.jpeg" height="300px" width="100%">
+                            </div>
+                            <div class="col-8 ">
+                                <h6 class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, suscipit nisi deleniti, deserunt reiciendis nesciunt similique necessitatibus omnis eius dicta atque velit veritatis in. Consequuntur nostrum neque laborum tempora maiores.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+
+    
+ </div>
+
+ <div class="container p-3">
+    <div id="ContactUs" class="mt-4">
+        <h1 class="text-center fw-bold">Contact Us</h1>
+        <div class="row">
+            
+                <div data-aos="slide-up" data-aos-duration="1000" class="col-md-6">
+                    <div class="d-flex my-3 pb-2 pt-md-5">
+                      <h5><i class="fal fa-home mt-2 fa-2x"></i>&nbsp;&nbsp;&nbsp;Kummari street, kotturu, srikakulam (dist), Andhra Pradesh - 532455</h5>
+                    </div>
+                    <div class="d-flex my-3 py-2">
+                      <h5><i class="fal fa-phone-alt fa-2x"></i>&nbsp;&nbsp;&nbsp; +91 9347442677</h5>
+                    </div>
+                    <div class="d-flex my-3 spy-2">
+                      <h5><i class="fal fa-envelope  fa-2x"></i>&nbsp;&nbsp;&nbsp; bhargavanaidujaddu@gmail.com</h5>
+                    </div>
+                  </div>
+            
+            <div data-aos="slide-left" data-aos-duration="1000" class="col-md-6">
+                <div class="card-body rounded bg-light p-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60502.29181149938!2d83.71458871618292!3d18.601374389119638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3c64aa157d0b8b%3A0x835a3d12144dfb76!2sPalakonda%2C%20Andhra%20Pradesh%20532440!5e0!3m2!1sen!2sin!4v1724566992899!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+<footer data-aos="zoom-in" data-aos-duration="1000" class="container-fluid mt-5 bg-dark text-light py-5 px-3">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-md-3">
+                <h3 class="fw-bold mb-4">STEVIT</h3>
+                <p> <a href="#" class="fooot">Developers Club</a> </p>
+				<p><a href="#" class="fooot">Salesforce Club</a> </p>
+			    <p> <a href="#" class="fooot">Robotics Club</a> </p>
+				<p> <a href="#" class="fooot">Cultural Club</a> </p>
+				<p> <a href="#" class="fooot">Photography Club</a> </p>
+				<p> <a href="#" class="fooot">Automobile Club</a> </p>
+				
+            </div>
+            <div class="col-md-3">
+                <h3 class="fw-bold mb-4">TOP CATEGORIES</h3>
+                <p> <a href="#" class="fooot">DevOps Engineer</a> </p>
+				<p> <a href="#" class="fooot">GCP Cloud Data Engineer</a> </p>
+			    <p> <a href="#" class="fooot">Digital marketing training</a> </p>
+				<p> <a href="#" class="fooot">Scrum Master</a> </p>
+            </div>
+            <div class="col-md-3">
+                <h3 class="fw-bold mb-4">TRENDING COURSES</h3>
+                <p> <a href="#" class="fooot">Developers Club</a> </p>
+				<p> <a href="#" class="fooot">Salesforce Club</a> </p>
+			    <p> <a href="#" class="fooot">Robotics Club</a> </p>
+				<p> <a href="#" class="fooot">Cultural Club</a> </p>
+				<p> <a href="#" class="fooot">Photography Club</a> </p>
+				<p> <a href="#" class="fooot">Automobile Club</a> </p>
+            </div>
+            <div class="col-md-3">
+                <h3 class="fw-bold mb-4">WORK WITH US</h3>
+                <p> <a href="#" class="fooot">Developers Club</a> </p>
+				<p> <a href="#" class="fooot">Salesforce Club</a> </p>
+			    <p> <a href="#" class="fooot">Robotics Club</a> </p>
+				<p> <a href="#" class="fooot">Cultural Club</a> </p>
+				<p> <a href="#" class="fooot">Photography Club</a> </p>
+				<p> <a href="#" class="fooot">Automobile Club</a> </p>
+            </div>
+    
+        </div>
+        <hr>
+        <h1 class="text-center fw-bold">STEVIT</h1>
+        <h5 class="text-center">All Rights Reserved STEVIT India Pvt. Ltd.</h5>
+        <h5 class="text-center">Sitemap | FAQs | Cancellation & Refunds | Privacy Policy | Terms & Conditions | Feedback</h5>
+        <h5 class="text-center">*Note: The certification names and logos are the trademarks of their respective owners. View Disclaimer</h5>
+    </div>
+    
+</footer>
+
+
+
+  
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper1", {
+      rewind: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      centeredSlides: false,
+      spaceBetween: 30,
+      rewind: true,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      breakpoints: {
+        360: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        720: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+        },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    var appendNumber = 4;
+    var prependNumber = 1;
+    document
+      .querySelector(".prepend-2-slides")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        swiper.prependSlide([
+          '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+          '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+        ]);
+      });
+    document
+      .querySelector(".prepend-slide")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        swiper.prependSlide(
+          '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+        );
+      });
+    document
+      .querySelector(".append-slide")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        swiper.appendSlide(
+          '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+        );
+      });
+    document
+      .querySelector(".append-2-slides")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        swiper.appendSlide([
+          '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+          '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+        ]);
+      });
+
+  </script>
+   
+    
+
+
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+</body>
+</html>
